@@ -15,6 +15,9 @@
 		A5C610151C9BDC090017B780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C610131C9BDC090017B780 /* LaunchScreen.storyboard */; };
 		A5C610201C9BDC090017B780 /* TTTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6101F1C9BDC090017B780 /* TTTableViewDemoTests.m */; };
 		A5C6102B1C9BDC090017B780 /* TTTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6102A1C9BDC090017B780 /* TTTableViewDemoUITests.m */; };
+		A5C610391C9BDC7E0017B780 /* cars_simple.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C610381C9BDC7E0017B780 /* cars_simple.plist */; };
+		A5C6103C1C9BDCBC0017B780 /* TTCars.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6103B1C9BDCBC0017B780 /* TTCars.m */; };
+		A5C6103E1C9BF7D10017B780 /* cars_total.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C6103D1C9BF7D10017B780 /* cars_total.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		A5C610261C9BDC090017B780 /* TTTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C6102A1C9BDC090017B780 /* TTTableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTableViewDemoUITests.m; sourceTree = "<group>"; };
 		A5C6102C1C9BDC090017B780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C610381C9BDC7E0017B780 /* cars_simple.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars_simple.plist; sourceTree = "<group>"; };
+		A5C6103A1C9BDCBC0017B780 /* TTCars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCars.h; sourceTree = "<group>"; };
+		A5C6103B1C9BDCBC0017B780 /* TTCars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTCars.m; sourceTree = "<group>"; };
+		A5C6103D1C9BF7D10017B780 /* cars_total.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars_total.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +117,8 @@
 				A5C610131C9BDC090017B780 /* LaunchScreen.storyboard */,
 				A5C610161C9BDC090017B780 /* Info.plist */,
 				A5C610051C9BDC090017B780 /* Supporting Files */,
+				A5C6103A1C9BDCBC0017B780 /* TTCars.h */,
+				A5C6103B1C9BDCBC0017B780 /* TTCars.m */,
 			);
 			path = TTTableViewDemo;
 			sourceTree = "<group>";
@@ -118,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				A5C610061C9BDC090017B780 /* main.m */,
+				A5C6103D1C9BF7D10017B780 /* cars_total.plist */,
+				A5C610381C9BDC7E0017B780 /* cars_simple.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -243,7 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C6103E1C9BF7D10017B780 /* cars_total.plist in Resources */,
 				A5C610151C9BDC090017B780 /* LaunchScreen.storyboard in Resources */,
+				A5C610391C9BDC7E0017B780 /* cars_simple.plist in Resources */,
 				A5C610121C9BDC090017B780 /* Assets.xcassets in Resources */,
 				A5C610101C9BDC090017B780 /* Main.storyboard in Resources */,
 			);
@@ -270,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C6103C1C9BDCBC0017B780 /* TTCars.m in Sources */,
 				A5C6100D1C9BDC090017B780 /* ViewController.m in Sources */,
 				A5C6100A1C9BDC090017B780 /* AppDelegate.m in Sources */,
 				A5C610071C9BDC090017B780 /* main.m in Sources */,
