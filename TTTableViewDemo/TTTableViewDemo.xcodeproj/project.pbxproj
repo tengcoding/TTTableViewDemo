@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5143F261C9FFB0500A64FFC /* MTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5143F251C9FFB0500A64FFC /* MTTableViewController.m */; };
+		A5143F281CA1122400A64FFC /* tgs.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5143F271CA1122400A64FFC /* tgs.plist */; };
+		A5143F2B1CA112C700A64FFC /* STgoods.m in Sources */ = {isa = PBXBuildFile; fileRef = A5143F2A1CA112C700A64FFC /* STgoods.m */; };
+		A5143F2D1CA1211F00A64FFC /* TTGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5143F2C1CA1211F00A64FFC /* TTGoodsCell.xib */; };
+		A5143F301CA121E800A64FFC /* TTGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5143F2F1CA121E800A64FFC /* TTGoodsCell.m */; };
 		A5C610071C9BDC090017B780 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C610061C9BDC090017B780 /* main.m */; };
 		A5C6100A1C9BDC090017B780 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C610091C9BDC090017B780 /* AppDelegate.m */; };
 		A5C6100D1C9BDC090017B780 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6100C1C9BDC090017B780 /* ViewController.m */; };
@@ -38,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5143F241C9FFB0500A64FFC /* MTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTableViewController.h; sourceTree = "<group>"; };
+		A5143F251C9FFB0500A64FFC /* MTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTableViewController.m; sourceTree = "<group>"; };
+		A5143F271CA1122400A64FFC /* tgs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tgs.plist; sourceTree = "<group>"; };
+		A5143F291CA112C700A64FFC /* STgoods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STgoods.h; sourceTree = "<group>"; };
+		A5143F2A1CA112C700A64FFC /* STgoods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STgoods.m; sourceTree = "<group>"; };
+		A5143F2C1CA1211F00A64FFC /* TTGoodsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTGoodsCell.xib; sourceTree = "<group>"; };
+		A5143F2E1CA121E800A64FFC /* TTGoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGoodsCell.h; sourceTree = "<group>"; };
+		A5143F2F1CA121E800A64FFC /* TTGoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTGoodsCell.m; sourceTree = "<group>"; };
 		A5C610021C9BDC090017B780 /* TTTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C610061C9BDC090017B780 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5C610081C9BDC090017B780 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +98,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5143F231C9FF3C500A64FFC /* TuanDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A5143F2C1CA1211F00A64FFC /* TTGoodsCell.xib */,
+				A5143F241C9FFB0500A64FFC /* MTTableViewController.h */,
+				A5143F251C9FFB0500A64FFC /* MTTableViewController.m */,
+				A5143F291CA112C700A64FFC /* STgoods.h */,
+				A5143F2A1CA112C700A64FFC /* STgoods.m */,
+				A5143F2E1CA121E800A64FFC /* TTGoodsCell.h */,
+				A5143F2F1CA121E800A64FFC /* TTGoodsCell.m */,
+			);
+			name = TuanDemo;
+			sourceTree = "<group>";
+		};
 		A5C60FF91C9BDC090017B780 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +135,7 @@
 		A5C610041C9BDC090017B780 /* TTTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5143F231C9FF3C500A64FFC /* TuanDemo */,
 				A5C610081C9BDC090017B780 /* AppDelegate.h */,
 				A5C610091C9BDC090017B780 /* AppDelegate.m */,
 				A5C6100B1C9BDC090017B780 /* ViewController.h */,
@@ -126,6 +154,7 @@
 		A5C610051C9BDC090017B780 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A5143F271CA1122400A64FFC /* tgs.plist */,
 				A5C610061C9BDC090017B780 /* main.m */,
 				A5C6103D1C9BF7D10017B780 /* cars_total.plist */,
 				A5C610381C9BDC7E0017B780 /* cars_simple.plist */,
@@ -259,6 +288,8 @@
 				A5C610391C9BDC7E0017B780 /* cars_simple.plist in Resources */,
 				A5C610121C9BDC090017B780 /* Assets.xcassets in Resources */,
 				A5C610101C9BDC090017B780 /* Main.storyboard in Resources */,
+				A5143F2D1CA1211F00A64FFC /* TTGoodsCell.xib in Resources */,
+				A5143F281CA1122400A64FFC /* tgs.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +317,10 @@
 				A5C6103C1C9BDCBC0017B780 /* TTCars.m in Sources */,
 				A5C6100D1C9BDC090017B780 /* ViewController.m in Sources */,
 				A5C6100A1C9BDC090017B780 /* AppDelegate.m in Sources */,
+				A5143F301CA121E800A64FFC /* TTGoodsCell.m in Sources */,
+				A5143F2B1CA112C700A64FFC /* STgoods.m in Sources */,
 				A5C610071C9BDC090017B780 /* main.m in Sources */,
+				A5143F261C9FFB0500A64FFC /* MTTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +544,7 @@
 				A5C610311C9BDC090017B780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5C610321C9BDC090017B780 /* Build configuration list for PBXNativeTarget "TTTableViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +553,7 @@
 				A5C610341C9BDC090017B780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5C610351C9BDC090017B780 /* Build configuration list for PBXNativeTarget "TTTableViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +562,7 @@
 				A5C610371C9BDC090017B780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

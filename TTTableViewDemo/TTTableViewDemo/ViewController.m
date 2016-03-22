@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "TTCars.h"
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
 
 @property (nonatomic,strong) NSArray *Cars;
 
@@ -58,10 +58,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     TTCars *cars = self.Cars[indexPath.section];
-    NSString *name = cars.cars[indexPath.row];
-    
+
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    cell.textLabel.text = name;
+    cell.textLabel.text = cars.title;
     return cell;
 }
 
@@ -86,6 +85,42 @@
     }
     return arr;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    TTCars *cars = self.Cars[indexPath.section];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"编辑" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    alert.tag = indexPath.row;
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    UITextField *txtname = [alert textFieldAtIndex:0];
+    txtname.text = cars.title;
+    [alert show];
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    if (buttonIndex == 1) {
+        UITextField *txtName = [alertView textFieldAtIndex:0];
+        NSString *userInput = txtName.text;
+        TTCars *cars = self.Cars[[self.tableView indexPathForSelectedRow].section];
+        NSString *str = cars.cars[alertView.tag];
+        NSLog(@"%@",str);
+        cars.title = userInput;
+        
+        [self.tableView reloadRowsAtIndexPaths:@[[self.tableView indexPathForSelectedRow]] withRowAnimation:UITableViewRowAnimationBottom];
+        
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"cars_simple.plist" ofType:nil];
+        
+        // 注意: 这里直接写入数据是不行的!!(原因:self.heros集合中保存的是模型对象, 不是字典数据)
+        // 通过数组的writeToFile:方法, 只能写入一些基本的数据, 无法把对象直接写入到文件
+        // 要想把一个对象直接写入到文件中, 需要使用"归档"的方式.
+        [self.Cars writeToFile:path atomically:YES];
+        
+        
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
